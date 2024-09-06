@@ -14,7 +14,7 @@ def main():
     st.title("Titanic Classification - rubangino.in")
 
     # Input Variables 
-    passenger_class = st.text_input("Enter the passenger class: (1/2/3)")
+    passenger_class = st.number_input("Enter the passenger class: (1/2/3)")
 
     sex = st.text_input("Enter your sex (Male/Female): ")
     if sex == "Male" or sex == "male": 
@@ -26,13 +26,13 @@ def main():
 
     # st.success(sex)
 
-    age = st.text_input("Enter their age: ")
+    age = st.number_input("Enter their age: ")
 
-    sibsp = st.text_input("Enter their Siblings: ")
+    sibsp = st.number_input("Enter their Siblings: ")
 
-    parch = st.text_input("Enter their parch: ")
+    parch = st.number_input("Enter their parch: ")
 
-    fare = st.text_input("Enter their ticket Fare: ")
+    fare = st.number_input("Enter their ticket Fare: ")
 
     embarked = st.text_input("Enter their Port of Embarked: (C=Cherbourg | Q=Queentown | S=Southampton) ")
     if embarked == "C" or embarked == "c": 
